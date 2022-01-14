@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 165px 0 135px;
+}
+
+.header__logo {
+  margin-right: 60px;
+}
+
+.header__navList {
+  display: flex;
+}
+
+.header__navLink {
+  margin-right: 60px;
+}
+
+/*# sourceMappingURL=styles.css.map */
