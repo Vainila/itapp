@@ -51,33 +51,320 @@
                </nav>
             </header>
          </div>
-         <section class="hero">
-            <div class="hero-inner">
-               <div class="hero__info">
-                  <h2 class="hero__heading">Get everything you need from a job</h2>
-                  <p class="hero__text">
-                     Search for and be recommended to a new job that you'll love.
-                  </p>
+         <div class="main">
+            <section class="hero">
+               <div class="hero-inner">
+                  <div class="hero__info">
+                     <h2 class="hero__heading">Get everything you need from a job</h2>
+                     <p class="hero__text">
+                        Search for and be recommended to a new job that you'll love.
+                     </p>
+                  </div>
+                  <img class="hero__img" src="./assets/img/heroSVG.svg" alt="heroSVG" />
+                  <form class="search-form hero__search">
+                     <input class="job" type="text" name="jobTitle" id="jobTitle" placeholder="Job title">
+                     <input class="where" type="text" name="where" id="where" placeholder="Where">
+                     
+                     <select class="distance" name="distance" id="distance">
+                        <option value="" selected disabled hidden>Distance</option>
+                        <option value="Minsk">Minsk</option>
+                        <option value="Warsaw">Warsaw</option>
+                        <option value="Vilnius">Vilnius</option>
+                        <option value="LAC">Los Angeles</option>
+                        <option value="Petersburg">St. Petersburg</option>
+                     </select>
+   
+                     <button class="btn btn--primary search-form__btn" type="submit">Search</button>
+                     
+                  </fo>
                </div>
-               <img class="hero__img" src="./assets/img/heroSVG.svg" alt="heroSVG" />
-               <div class="search-form hero__search">
-                  <input class="job" type="text" name="jobTitle" id="jobTitle" placeholder="Job title">
-                  <input class="where" type="text" name="where" id="where" placeholder="Where">
-                  
-                  <select class="distance" name="distance" id="distance">
-                     <option value="" selected disabled hidden>Distance</option>
-                     <option value="Minsk">Minsk</option>
-                     <option value="Warsaw">Warsaw</option>
-                     <option value="Vilnius">Vilnius</option>
-                     <option value="LAC">Los Angeles</option>
-                     <option value="Petersburg">St. Petersburg</option>
-                  </select>
-
-                  <button class="btn btn--primary search-form__btn ">Search</button>
-
+            </section>
+            <section class="guide">
+               <div class="candidates">
+                  <h3 class="section__heading candidates__heading">
+                     For Candidates
+                  </h3>
+                  <div class="guide__info-container">
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Build profile page
+                        </h4>
+                        <span class="guide__text">
+                           Manage all applications in one area
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           User friendly
+                        </h4>
+                        <span class="guide__text">
+                           Easy CV upload, build or edit
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Nothing will be lost
+                        </h4>
+                        <span class="guide__text">
+                           Save jobs for later viewing, share to colleagues or social media 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Recommendations
+                        </h4>
+                        <span class="guide__text">
+                           View recommended jobs based on selected preferences 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Apply directly to employer 
+                        </h4>
+                        <span class="guide__text">
+                           All jobs posted are employer only
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Feedback on all applications 
+                        </h4>
+                        <span class="guide__text">
+                           You will always receive a response to your application
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Advanced search
+                        </h4>
+                        <span class="guide__text">
+                           Search by multi location/ type feature 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Visibility
+                        </h4>
+                        <span class="guide__text">
+                           Be visible to employers for invitations to apply for a position 
+                        </span>
+                     </div>
+                  </div>
+                  <img class="candidates__img" src="./assets/img/candidates.svg" alt="candidates">
                </div>
+               <div class="employers">
+                  <h3 class="section__heading employers__heading">
+                     For Employers
+                  </h3>
+                  <div class="guide__info-container">
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Everything you need
+                        </h4>
+                        <span class="guide__text">
+                           Manage recruitment process all in one place 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Reduce annual recruitment costs 
+                        </h4>
+                        <span class="guide__text">
+                           Simplifed recruitment process reducing overheads
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Application flow
+                        </h4>
+                        <span class="guide__text">
+                           Direct applicants with full view CV and details 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Personalised
+                        </h4>
+                        <span class="guide__text">
+                           Build job and personalise process (stages, questions etc.) 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Tailored packages  
+                        </h4>
+                        <span class="guide__text">
+                           Customise your package to your needs
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Analytics 
+                        </h4>
+                        <span class="guide__text">
+                           Get detailed information on how your applications are performing
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Candidate database 
+                        </h4>
+                        <span class="guide__text">
+                           Collect your own candidate database and recommend other roles in your organisation. 
+                        </span>
+                     </div>
+                     
+                  </div>
+                  <img class="employers__img" src="./assets/img/employers.svg" alt="candidates">
+                  <a href="#" class="btn btn--primary employers__btn">For Employers</a>
+               </div>
+
+               <div class="headhunters">
+                  <h3 class="section__heading employers__heading">
+                     For Headhunters
+                  </h3>
+                  <div class="guide__info-container">
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Build profile
+                        </h4>
+                        <span class="guide__text">
+                           Advertise skills/ expertise to employers and candidates 
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Get invited to assist on a vacancy
+                        </h4>
+                        <span class="guide__text">
+                           Submit your candidates directly to employers
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Develop stronger client relationships
+                        </h4>
+                        <span class="guide__text">
+                           No confusion who submitted candidates first
+                        </span>
+                     </div>
+                     <div class="guide__info">
+                        <h4 class="guide__heading">
+                           Weekly progress summary
+                        </h4>
+                        <span class="guide__text">
+                           Get weekly updates on your candidates progress 
+                        </span>
+                     </div>
+                                          
+                  </div>
+                  <img class="headhunters__img" src="./assets/img/headhunters.svg" alt="candidates">
+                  <a href="#" class="btn btn--primary headhunters__btn">For Headhunters</a>
+               </div>
+            </section>
+            <div class="comments-wrapper">
+               <section class="comments">
+                  <h3 class="section__heading">Our clients speak</h3>
+                  <p class="comments__text">We have been working with clients around the world</p>
+                  <div class="comments__container">
+                     <div class="comment-Item" id="slide--1">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Efficient Collaborating</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     <div class="comment-Item" id="slide--2">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Intuitive Design</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     <div class="comment-Item" id="slide--3">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Mindblowing Service</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     <div class="comment-Item" id="slide--4">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Mindblowing Service</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     <div class="comment-Item" id="slide--5">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Mindblowing Service</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     <div class="comment-Item" id="slide--6">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Mindblowing Service</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     <div class="comment-Item" id="slide--7">
+                        <img src="./assets/img/stars.svg" alt="stars" class="comment-Item__img">
+                        <h4 class="comment-Item__heading">Mindblowing Service</h4>
+                        <p class="comment-Item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p>
+                        <div class="user__info">
+                           <img src="./assets/img/avatar.png" alt="avatarImg" class="user__img">
+                           <h5 class="user__name">Jane Cooper</h5>
+                           <span class="user__status">CEO at ABC Corporation</span>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="sliders__nav">
+                     <a href="#slide--1" class="sliders__dot"></a>
+                     
+                     <a href="#slide--4" class="sliders__dot sliders__dot--active"></a>
+                     
+                     <a href="#slide--7" class="sliders__dot"></a>                     
+                  </div>
+               </section>
             </div>
-         </section>
+            <section class="achievements">
+               <h3 class="section__heading achievements__heading">
+                  Some count that matters
+               </h3>
+               <p class="achievements__text">
+                  Our achievements in the journey depicted in numbers
+               </p>
+               <div class="achievements-container">
+                  <div class="achievements__item">
+                     <img class="achievements__img" src="./assets/img/hat.svg" alt="hat.svg">
+                     <h4 class="item__heading">40+</h4>
+                     <span class="item__text">Happy Clients</span>
+                  </div>
+               </div>
+            </section>
+         </div>
+         
       </div>
    </body>
 </html>

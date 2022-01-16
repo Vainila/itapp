@@ -1,0 +1,120 @@
+@import "./vars.scss";
+
+.comments-wrapper {
+   background: $blue-bg;
+}
+.comments {
+   padding: 112px 165px;
+   margin: 0 auto;
+   width: 1440px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+}
+
+.comments__heading {
+   font-size: 40px;
+   line-height: 56px;
+   font-weight: 800;
+   color: $heading-color;
+   margin-bottom: 8px;
+}
+
+.comments__text {
+   font-size: 18px;
+   line-height: 30px;
+   color: $dark-gray;
+   font-weight: 400;
+   margin-bottom: 56px;
+}
+.comments__container {
+   gap: 30px;
+   max-width: 1100px;
+   display: flex;
+
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+}
+.comment-Item {
+   width: 350px;
+   height: 410px;
+   background: #ffffff;
+   box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
+   border-radius: 8px;
+   padding: 32px 40px;
+   box-sizing: border-box;
+   flex-shrink: 0;
+
+   -webkit-overflow-scrolling: touch;
+   scroll-snap-align: start;
+   cursor: grab;
+}
+.comments__container::-webkit-scrollbar {
+   width: 0;
+   background: transparent;
+}
+.comment-Item__img {
+   margin-bottom: 26px;
+}
+
+.comment-Item__heading {
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 28px;
+
+   margin-bottom: 16px;
+}
+.comment-Item__text {
+   margin-bottom: 95px;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color: $heading-color;
+}
+.user__info {
+   display: grid;
+   grid-template-areas:
+      "img name"
+      "img status";
+   column-gap: 12px;
+   justify-content: start;
+}
+.user__img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   grid-area: img;
+}
+
+.user__name {
+   grid-area: name;
+   font-size: 16px;
+   line-height: 24px;
+   color: $heading-color;
+}
+
+.user__status {
+   grid-area: status;
+   font-size: 14px;
+   line-height: 24px;
+   color: $dark-gray;
+}
+
+.sliders__nav {
+   display: flex;
+   gap: 12px;
+   margin: 48px auto 0;
+}
+.sliders__dot {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: $link-gray;
+}
+a.sliders__dot--active {
+   background: transparent;
+   border: 3px solid $primary-blue;
+   transform: translateY(-25%);
+}
+

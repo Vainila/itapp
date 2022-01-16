@@ -1,0 +1,95 @@
+@import "./vars.scss";
+
+.guide{
+   width: 1440px;
+   margin: 0 auto;
+   padding: 112px 224px 151px 165px;
+   box-sizing: border-box;
+}
+
+.candidates{
+   display: grid;
+   grid-template-areas: 
+   "heading img"
+   "info img";  
+   column-gap: 120px;
+   margin-bottom: 170px;
+}
+
+
+
+
+
+.candidates__heading{
+   margin-bottom: 48px;
+}
+.guide__info-container{
+   grid-area: info;
+   display: flex;
+   gap:32px;
+   flex-wrap: wrap;
+   width: 524px;
+}
+.guide__info{
+   width: 244px;   
+}
+
+.guide__heading{
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 26px;
+   color: $heading-color;
+   margin-bottom: 8px;
+}
+
+.guide__text{
+   color: $dark-gray;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.candidates__img{
+   grid-area: img;
+}
+
+
+
+.employers{
+   display: grid;
+   grid-template-areas: 
+   "img heading"
+   "img info"
+   "img btn";   
+   column-gap: 135px;
+   margin-bottom: 106px;
+}
+
+.employers__heading{   
+   margin-bottom: 48px;
+}
+
+.employers__img{
+   grid-area: img;
+   margin-top: 50px;
+}
+
+.employers__btn, .headhunters__btn{
+   grid-area: btn;
+   justify-self: start;
+   padding: 16px 11px;
+   margin-top: 30px;
+}
+
+
+.headhunters{   
+   display: grid;
+   grid-template-areas: 
+   "heading img"
+   "info img"
+   "btn img";      
+   column-gap: 120px;
+}
+.headhunters__img{
+   grid-area: img;
+}

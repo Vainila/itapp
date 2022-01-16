@@ -3,6 +3,9 @@
 @import "./hero.scss";
 @import "./vars.scss";
 @import "./search-form.scss";
+@import "./guide.scss";
+@import "./comments.scss";
+@import "./achievements.scss";
 
 * {
    margin: 0;
@@ -23,4 +26,15 @@ a {
    @include manrope;
 }
 
+.main{
+   width: 100%;
+}
 
+
+.section__heading{
+   grid-area: heading;
+   font-size: 40px;
+   line-height: 56px;
+   font-weight: 800;
+   color: $heading-color;
+}
