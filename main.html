@@ -9,40 +9,74 @@
    </head>
    <body>
       <div class="wrapper">
-         <header class="header">
-            <img
-               class="header__logo"
-               src="./assets/img/itapplogo_color.svg"
-               alt="logo"
-            />
-            <nav class="header__nav">
-               <ul class="header__navList">
-                  <li><a class="header__navLink header__navLink--active"  href="#">Home</a></li>
-                  <li><a class="header__navLink" href="#">News</a></li>
-                  <li><a class="header__navLink" href="#">About</a></li>
-                  <li><a class="header__navLink" href="#">For Employers</a></li>
-                  <li><a class="header__navLink" href="#">For Headhunters</a></li>
-               </ul>               
-            </nav>
-            <button class="btn--primary">Login</button>
-            <button class="btn--secondary">Sign up</button>
-         </header>
+         <div class="header-wrapper">
+            <header class="header">
+               <nav class="header__nav">
+                  <a href="#">
+                     <img
+                        class="header__logo"
+                        src="./assets/img/itapplogo_color.svg"
+                        alt="logo"
+                     />
+                  </a>
+                  <ul class="header__navList">
+                     <li class="header__navItem">
+                        <a
+                           class="header__navLink header__navLink--active"
+                           href="#"
+                        >
+                           Home
+                        </a>
+                     </li>
+                     <li class="header__navItem">
+                        <a class="header__navLink" href="#">News</a>
+                     </li>
+                     <li class="header__navItem">
+                        <a class="header__navLink" href="#">About</a>
+                     </li>
+                  </nav>
+                  <nav class="header__nav">
+
+                     <li class="header__navItem">
+                        <a class="header__navLink" href="#">For Employers</a>
+                     </li>
+                     <li class="header__navItem">
+                        <a class="header__navLink" href="#">For Headhunters</a>
+                     </li>
+                  </ul>
+                  <button class="btn btn--secondary header__loginBtn">
+                     Login
+                  </button>
+                  <button class="btn btn--primary header__signBtn">Sign up</button>
+               </nav>
+            </header>
+         </div>
          <section class="hero">
             <div class="hero-inner">
+               <div class="hero__info">
+                  <h2 class="hero__heading">Get everything you need from a job</h2>
+                  <p class="hero__text">
+                     Search for and be recommended to a new job that you'll love.
+                  </p>
+               </div>
+               <img class="hero__img" src="./assets/img/heroSVG.svg" alt="heroSVG" />
+               <div class="search-form hero__search">
+                  <input class="job" type="text" name="jobTitle" id="jobTitle" placeholder="Job title">
+                  <input class="where" type="text" name="where" id="where" placeholder="Where">
+                  
+                  <select class="distance" name="distance" id="distance">
+                     <option value="" selected disabled hidden>Distance</option>
+                     <option value="Minsk">Minsk</option>
+                     <option value="Warsaw">Warsaw</option>
+                     <option value="Vilnius">Vilnius</option>
+                     <option value="LAC">Los Angeles</option>
+                     <option value="Petersburg">St. Petersburg</option>
+                  </select>
 
-               <h2 class="hero__heading">
-                  Get everything you need from a job
-               </h2>
-               <p class="hero__text">
-                  Search for and be recommended to a new job that you'll love.
-               </p>
-               <img src="./assets/img/heroSVG.svg" alt="heroSVG">
+                  <button class="btn btn--primary search-form__btn ">Search</button>
 
-               
-
+               </div>
             </div>
-               
-
          </section>
       </div>
    </body>

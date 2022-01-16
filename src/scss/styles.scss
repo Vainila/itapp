@@ -1,46 +1,26 @@
-$light-bg : #FFFFFF;
-$dark-bg : #0B0D17;
-$base-color : #F5F7FA;
-$blue-bg : #ECF8FE;
-$dark-gray : #999999;
-$light-gray : #EBEBEB;
+@import "./header.scss";
+@import "./buttons.scss";
+@import "./hero.scss";
+@import "./vars.scss";
+@import "./search-form.scss";
 
-*{
+* {
    margin: 0;
    padding: 0;
-
 }
-ul,li, a{
+ul,
+li,
+a {
    text-decoration: none;
    list-style: none;
 }
 
-.wrapper{
-   max-width: 1440px;
+.wrapper {
+   width: 100%;
    display: flex;
    flex-direction: column;
-  
-   margin: 0 auto;
-}
-
-.header{
-   display: flex;
-   height: 80px;
    align-items: center;
-   background: $light-bg;
-   border-bottom: 1px solid $light-gray;
-   padding: 0 165px 0 135px;
+   @include manrope;
 }
-.header__logo{
-   margin-right: 60px;
-}
-.header__navList{
-   display: flex;   
-}
-
-.header__navLink{
-   margin-right: 60px;
-}
-
 
 

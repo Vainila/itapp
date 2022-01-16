@@ -1,0 +1,30 @@
+@import "./vars.scss";
+
+.btn {
+   
+   border-radius: 8px;
+   border: 1px solid $primary-blue;
+   cursor: pointer;
+   white-space: nowrap;
+}
+
+.header .btn {
+   padding: 10px 30px;
+}
+
+.btn--primary {
+   color: #ffffff;
+   background: $primary-blue;
+}
+.btn--primary:hover {
+   background: $secondary-blue;
+}
+
+.btn--secondary {
+   color: $primary-blue;
+   background: transparent;
+}
+.btn--secondary:hover{
+   color: $secondary-blue;
+   border-color: $secondary-blue;
+}

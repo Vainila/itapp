@@ -1,0 +1,67 @@
+@import "./vars.scss";
+
+.header-wrapper {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   border-bottom: 1px solid $light-gray;
+}
+.header {
+   width: 1440px;
+   height: 80px;
+   padding: 0 165px 0 135px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: $light-bg;
+   box-sizing: border-box;
+
+   font-size: 14px;
+   @include manrope;
+   font-weight: 700;
+   line-height: 20px;
+}
+.header__nav {
+   display: flex;
+   align-items: center;
+}
+.header__logo {
+   margin-right: 60px;
+}
+.header__navList {
+   display: flex;
+}
+
+.header__navItem {
+   margin-right: 32px;
+   position: relative;
+   line-height: 80px;
+   min-width: fit-content;
+}
+.header__navLink {
+   color: $dark-gray;
+}
+.header__navLink--active {
+   color: $primary-blue;
+}
+.header__navLink:hover {
+   color: $secondary-blue;
+}
+
+.header__navLink--active::after {
+   content: "";
+   height: 1px;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   position: absolute;
+   background: $primary-blue;
+}
+
+.header__navItem:last-child {
+   margin-right: 48px;
+}
+
+.header__loginBtn {
+   margin-right: 14px;
+}

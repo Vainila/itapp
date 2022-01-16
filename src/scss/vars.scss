@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Montserrat:wght@900&display=swap");
+
+@mixin manrope {
+   font-family: "Manrope", sans-serif;
+}
+@mixin montserrat {
+   font-family: "Montserrat", sans-serif;
+}
+
+$light-bg: #ffffff;
+$dark-bg: #0b0d17;
+$base-color: #f5f7fa;
+$blue-bg: #ecf8fe;
+$dark-gray: #999999;
+$light-gray: #ebebeb;
+$primary-blue: #2E1AAD;
+$secondary-blue: #5136FF;
+$heading-color: #231F20;
+$search-border: #dddddd;

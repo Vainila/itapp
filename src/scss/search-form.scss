@@ -1,0 +1,39 @@
+.search-form {
+   background: #ffffff;
+   box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
+   border-radius: 8px;
+   display: flex;
+   
+   padding: 22px 32px;
+   box-sizing: border-box;
+   gap: 24px;
+   
+}
+
+.search-form__btn{
+   padding: 16px 30px;
+}
+
+.job,.where,.distance{
+   border-radius: 8px;
+   border: 1px solid $search-border;
+   color: $dark-gray;
+   padding-left: 16px;
+   font-size: 16px;
+}
+
+.job{
+   width: 30%;   
+}
+
+.where{
+   width: 28%;
+}
+
+.distance{
+   width: 22%;
+   padding-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("/assets/img/dropdown_arrow.svg") no-repeat 90%;
+}
