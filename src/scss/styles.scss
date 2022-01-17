@@ -6,6 +6,10 @@
 @import "./guide.scss";
 @import "./comments.scss";
 @import "./achievements.scss";
+@import "./news.scss";
+@import "./cookies.scss";
+@import "./footer.scss";
+
 
 * {
    margin: 0;
@@ -38,3 +42,13 @@ a {
    font-weight: 800;
    color: $heading-color;
 }
+
+.section__text {
+   font-size: 18px;
+   line-height: 30px;
+   color: $dark-gray;
+   font-weight: 400;
+   margin-bottom: 56px;
+   margin-top: 8px;
+}
+

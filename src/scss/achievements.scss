@@ -1,0 +1,42 @@
+@import "./vars.scss";
+
+.achievements{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 120px 165px 0;
+   box-sizing: border-box;
+   margin-bottom: 107px;
+}
+
+
+.achievements-container{
+   display: flex;
+   gap: 30px;   
+   
+}
+.achievements__item{
+   padding: 44px 70px 32px;
+   box-sizing: border-box;
+   background: $base-color;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 16px;
+   flex: 0 0 255px;
+   
+
+   .item__heading{
+      margin-top: 14px;
+      color: $heading-color;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 56px;
+   }
+   .item__text{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $dark-gray;
+   }
+}
+

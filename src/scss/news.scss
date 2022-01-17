@@ -1,0 +1,65 @@
+@import "./vars.scss";
+
+.news{
+   width: 1440px;
+   box-sizing: border-box;
+   padding: 0 165px 46px;
+   margin: 0 auto;
+}
+.news-top{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 56px;
+}
+
+.all-news{
+   position: relative;
+   padding-right: 19px;
+   font-weight: 800;
+   color: $dark-gray;
+   font-size: 14px;
+   line-height: 20px;
+}
+.all-news::after{
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 13px;
+   height: 9px;
+   background: url(./../../assets/img/rightArrow.svg);
+
+}
+
+.news-container{
+   display: flex;
+   gap: 30px;   
+}
+.news__item{
+   display: flex;
+   flex-direction: column;
+}
+
+.news__img{
+   width: 350px;
+   height: 182px;
+   border-radius: 8px;
+}
+
+.news__heading{
+   color: $heading-color;
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 28px;
+   margin-top: 24px;
+   
+}
+.news__text{
+   margin-top: 12px;
+   color: $dark-gray;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+}

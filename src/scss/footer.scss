@@ -1,0 +1,57 @@
+@import "./vars.scss";
+
+.footer{
+   width: 100%;
+   background: $dark-bg;
+
+}
+.footer-inner{
+   width: 1440px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   padding: 65px 425px 65px 165px;
+   color: $light-bg;
+   color: $footer-gray;
+   display: flex;
+}
+
+
+.copyright{
+   display: flex;
+   flex-direction: column;
+   width: 350px;
+   margin-right: 125px;
+}
+.footer__logo{
+   margin-bottom: 40px;
+   width: 109px;
+}
+.footer__text{
+   margin-bottom: 8px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;    
+}
+
+.footer__heading{
+   margin-bottom: 24px;
+   font-size: 20px;
+   line-height: 28px;
+   font-weight: 900;  
+}
+.footer__links-container{
+   width: 160px;
+}
+.footer__links-container{
+   margin-right: 30px;
+   width: 185px;
+}
+
+.footer__link{
+   color:  $footer-gray;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   margin-bottom: 12px;
+   white-space: nowrap;
+}
