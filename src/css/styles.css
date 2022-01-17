@@ -84,10 +84,16 @@
   border: 1px solid #2E1AAD;
   cursor: pointer;
   white-space: nowrap;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .btn {
-  padding: 10px 30px;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
 }
 
 .btn--primary {
@@ -181,7 +187,9 @@
 }
 
 .search-form__btn {
-  padding: 16px 30px;
+  width: 115px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 .job, .where, .distance {
@@ -276,8 +284,18 @@
 .employers__btn, .headhunters__btn {
   grid-area: btn;
   justify-self: start;
-  padding: 16px 11px;
   margin-top: 30px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 52px;
+}
+
+.employers__btn {
+  width: 130px;
+}
+
+.headhunters__btn {
+  width: 150px;
 }
 
 .headhunters {
@@ -412,6 +430,18 @@ a.sliders__dot--active {
   box-sizing: border-box;
   margin-bottom: 107px;
 }
+.achievements__img--1 {
+  margin-bottom: 14px;
+}
+.achievements__img--2 {
+  margin-bottom: 2px;
+}
+.achievements__img--3 {
+  margin-bottom: 18px;
+}
+.achievements__img--4 {
+  margin-bottom: 3px;
+}
 
 .achievements-container {
   display: flex;
@@ -429,7 +459,6 @@ a.sliders__dot--active {
   flex: 0 0 255px;
 }
 .achievements__item .item__heading {
-  margin-top: 14px;
   color: #231F20;
   font-weight: 800;
   font-size: 40px;
@@ -440,6 +469,7 @@ a.sliders__dot--active {
   font-size: 18px;
   line-height: 32px;
   color: #999999;
+  white-space: nowrap;
 }
 
 .news {
@@ -535,9 +565,12 @@ a.sliders__dot--active {
 }
 
 .cookies__btn {
-  padding: 10px 46px;
   border-radius: 100px;
   border: transparent;
+  font-size: 14px;
+  width: 112px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 .footer {

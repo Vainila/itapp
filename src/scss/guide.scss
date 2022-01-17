@@ -77,8 +77,18 @@
 .employers__btn, .headhunters__btn{
    grid-area: btn;
    justify-self: start;
-   padding: 16px 11px;
+   
    margin-top: 30px;
+   font-size: 16px;
+   box-sizing: border-box;
+   height: 52px;
+}
+.employers__btn{
+   width: 130px;
+}
+
+.headhunters__btn{
+   width: 150px;
 }
 
 
