@@ -114,6 +114,10 @@
   color: #ffffff;
 }
 
+.btn--black:hover {
+  background: #363031;
+}
+
 .hero {
   background: #f5f7fa;
   width: 100%;

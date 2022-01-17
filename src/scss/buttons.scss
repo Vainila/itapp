@@ -31,7 +31,9 @@
 
 .btn--black{
    background: $heading-color;
-   color: $light-bg;
-   
-   
+   color: $light-bg;   
+}
+
+.btn--black:hover{
+   background: #363031;
 }
