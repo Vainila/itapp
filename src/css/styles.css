@@ -20,7 +20,6 @@
   padding: 0 165px 0 135px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: #ffffff;
   box-sizing: border-box;
   font-size: 14px;
@@ -32,6 +31,12 @@
 .header__nav {
   display: flex;
   align-items: center;
+}
+
+.header__nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header__logo {
@@ -83,6 +88,54 @@
   margin-right: 14px;
 }
 
+.header__account-btn {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 65px;
+    width: 100%;
+    padding: 0 18px;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    height: 30px;
+    width: 123px;
+  }
+
+  .header__signBtn,
+.header__loginBtn {
+    display: none !important;
+  }
+
+  .header__navList {
+    flex-direction: column;
+  }
+
+  .header__navItem {
+    line-height: 52px;
+  }
+
+  .header__nav-wrapper {
+    flex-direction: column;
+    position: absolute;
+    justify-content: start;
+    background: white;
+    top: 66px;
+    padding: 0 15px 0;
+  }
+
+  .header__mobile-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header__account-btn {
+    display: block;
+  }
+}
 .btn {
   border-radius: 8px;
   border: 1px solid #2E1AAD;

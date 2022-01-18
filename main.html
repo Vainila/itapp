@@ -11,47 +11,56 @@
       <div class="wrapper">
          <div class="header-wrapper">
             <header class="header">
-               <nav class="header__nav">
-                  <a href="#">
-                     <img
-                        class="header__logo"
-                        src="./assets/img/itapplogo_color.svg"
-                        alt="logo"
-                     />
+               <a href="#">
+                  <img
+                     class="header__logo"
+                     src="./assets/img/itapplogo_color.svg"
+                     alt="logo"
+                  />
+               </a>
+               <div class="header__nav-wrapper">
+                  <nav class="header__nav">
+                     <ul class="header__navList">
+                        <li class="header__navItem">
+                           <a
+                              class="header__navLink header__navLink--active"
+                              href="#"
+                           >
+                              Home
+                           </a>
+                        </li>
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#">News</a>
+                        </li>
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#">About</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav class="header__nav">
+                     <ul class="header__navList">
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#">For Employers</a>
+                        </li>
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#"
+                              >For Headhunters</a
+                           >
+                        </li>
+                     </ul>
+                     <button class="btn btn--secondary header__loginBtn">
+                        Login
+                     </button>
+                     <button class="btn btn--primary header__signBtn">
+                        Sign up
+                     </button>
+                  </nav>
+               </div>
+               <div class="header__mobile-buttons">
+                  <a href="#" class="header__account-btn">
+                     <img src="./assets/img/account.svg" alt="account">
                   </a>
-                  <ul class="header__navList">
-                     <li class="header__navItem">
-                        <a
-                           class="header__navLink header__navLink--active"
-                           href="#"
-                        >
-                           Home
-                        </a>
-                     </li>
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">News</a>
-                     </li>
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">About</a>
-                     </li>
-                  </ul>
-               </nav>
-               <nav class="header__nav">
-                  <ul class="header__navList">
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">For Employers</a>
-                     </li>
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">For Headhunters</a>
-                     </li>
-                  </ul>
-                  <button class="btn btn--secondary header__loginBtn">
-                     Login
-                  </button>
-                  <button class="btn btn--primary header__signBtn">
-                     Sign up
-                  </button>
-               </nav>
+               </div>
             </header>
          </div>
          <div class="main">
@@ -474,8 +483,7 @@
                   <div class="slider__nav">
                      <button class="slider__dot"></button>
 
-                     <button class="slider__dot"
-                     ></button>
+                     <button class="slider__dot"></button>
 
                      <button class="slider__dot"></button>
                   </div>
