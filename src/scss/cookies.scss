@@ -3,6 +3,13 @@
 .cookies{
    background: $dark-gray;
    width: 100%;
+   position: sticky;
+   position: -webkit-sticky;
+   bottom: 0px;
+}
+
+.cookies--hide{
+   display:none;
 }
 .cookies-inner{
    width: 1440px;

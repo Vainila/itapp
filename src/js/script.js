@@ -26,11 +26,9 @@ function getNumberOfActiveSlide(){
    if(value > numberOfControlButtons-1){
       value = numberOfControlButtons-1;
    }
-
    if(value < 0){
       value = 0
-   }
-   
+   }   
    return value;
 }
 
@@ -40,8 +38,7 @@ function start(e){
    isPressed = true;
    styleControlButtons();
 }
-function move(e){
-   
+function move(e){   
    if(!isPressed) return;
    e.preventDefault();
    styleControlButtons();
@@ -53,17 +50,13 @@ function move(e){
       console.log(position)
       slider.classList.toggle("comments__container--scrolling");
       slider.scrollTo(1,0);
-      slider.classList.toggle("comments__container--scrolling");
-      
-   }
-   
+      slider.classList.toggle("comments__container--scrolling");      
+   }   
    else if(slider.scrollLeft == 0 && position >0){
       slider.style.transition = 0;
       slider.classList.toggle("comments__container--scrolling");
       slider.scrollTo(maxScrollWidth, 0);
-      slider.classList.toggle("comments__container--scrolling");
-      
-      
+      slider.classList.toggle("comments__container--scrolling");      
    } 
    else{
       slider.scrollTo(slider.scrollLeft-position, 0);  
@@ -92,3 +85,10 @@ sliderControlButtons.forEach(element => element.addEventListener("click", (e)=>{
    
 
 }))
+
+
+
+
+document.querySelector(".cookies__btn").onclick = () =>{
+   document.querySelector(".cookies").classList.add("cookies--hide");
+}

@@ -567,6 +567,13 @@
 .cookies {
   background: #999999;
   width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0px;
+}
+
+.cookies--hide {
+  display: none;
 }
 
 .cookies-inner {
