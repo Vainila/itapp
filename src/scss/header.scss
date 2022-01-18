@@ -12,7 +12,7 @@
    padding: 0 165px 0 135px;
    display: flex;
    align-items: center;
-   
+
    background: $light-bg;
    box-sizing: border-box;
 
@@ -25,7 +25,7 @@
    display: flex;
    align-items: center;
 }
-.header__nav-wrapper{
+.header__nav-wrapper {
    display: flex;
    justify-content: space-between;
    width: 100%;
@@ -77,49 +77,83 @@
 .header__signBtn {
 }
 
-.header__account-btn{
+.header__mobile-buttons {
    display: none;
+}
+.header__menuBtn{
+   border: none;
+   height: 14px;
+   cursor: pointer;
+   background: transparent;
+   // border: transparent;
+   padding-top: 3px;
+}
+
+.header__menuBtn--active{
+   .menu__line:nth-child(1){
+      background: red;
+      transform: rotate(0deg);
+      transform-origin: center center;
+      
+   }
+   .menu__line:nth-child(3){
+      background: blue;
+      transform: rotate(-45deg);
+      transform-origin: left center;
+   }
+}
+
+.menu__line{
+   width: 20px;
+   height: 2px;
+   border-radius: 1px;
+   background: $primary-blue;
+   margin-bottom: 4px;
+   
+}
+.menu__line:last-child{
+   margin-bottom: 0;
 }
 
 @media (max-width: 480px) {
    .header {
       height: 65px;
       width: 100%;
-      padding: 0 18px;
+      padding: 0 15px;
       justify-content: space-between;
    }
-   .header__logo{
+   .header__logo {
       height: 30px;
       width: 123px;
-      
    }
    .header__signBtn,
    .header__loginBtn {
       display: none !important;
    }
-   .header__navList{
+   .header__navList {
       flex-direction: column;
    }
-   .header__navItem{
+   .header__navItem {
       line-height: 52px;
    }
 
-   .header__nav-wrapper{
+   .header__nav-wrapper {
       flex-direction: column;
       position: absolute;
       justify-content: start;
       background: white;
       top: 66px;
+      left: 0;
       padding: 0 15px 0;
    }
 
-   .header__mobile-buttons{
+   .header__mobile-buttons {
       display: flex;
       gap: 20px;
    }
 
-   .header__account-btn{
-      display: block;      
-
+   .header__account-btn {
+      display: block;
    }
+   
 }
