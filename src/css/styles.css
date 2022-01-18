@@ -345,6 +345,13 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  cursor: grab;
+  cursor: -webkit-grab;
+  scrollbar-width: none;
+}
+
+.comments__container--scrolling {
+  scroll-behavior: auto !important;
 }
 
 .comment-Item {
@@ -357,8 +364,15 @@
   box-sizing: border-box;
   flex-shrink: 0;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-align: start;
   cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.comments__container--grabbing {
+  cursor: grabbing;
+}
+.comments__container--grabbing .comment-Item {
+  cursor: grabbing;
 }
 
 .comments__container::-webkit-scrollbar {
@@ -413,23 +427,26 @@
   color: #999999;
 }
 
-.sliders__nav {
+.slider__nav {
   display: flex;
   gap: 12px;
   margin: 48px auto 0;
 }
 
-.sliders__dot {
+.slider__dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #cccccc;
+  border-color: transparent;
+  cursor: pointer;
 }
 
-a.sliders__dot--active {
+.slider__dot--active {
   background: transparent;
   border: 3px solid #2E1AAD;
   transform: translateY(-25%);
+  box-sizing: content-box;
 }
 
 .achievements {

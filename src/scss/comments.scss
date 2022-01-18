@@ -29,8 +29,20 @@
    overflow-x: auto;
    scroll-snap-type: x mandatory;
    scroll-behavior: smooth;
+
+   cursor: grab;
+   cursor: -webkit-grab; 
+
+
+   scrollbar-width: none;
+  
 }
+.comments__container--scrolling{
+   scroll-behavior: auto !important;
+}
+
 .comment-Item {
+   
    width: 350px;
    height: 410px;
    background: #ffffff;
@@ -41,9 +53,21 @@
    flex-shrink: 0;
 
    -webkit-overflow-scrolling: touch;
-   scroll-snap-align: start;
+   
+
+
    cursor: grab;
+   cursor: -webkit-grab;
+   
 }
+
+.comments__container--grabbing{
+   cursor: grabbing;
+   .comment-Item{
+      cursor: grabbing;
+   }
+}
+
 .comments__container::-webkit-scrollbar {
    width: 0;
    background: transparent;
@@ -95,20 +119,23 @@
    color: $dark-gray;
 }
 
-.sliders__nav {
+.slider__nav {
    display: flex;
    gap: 12px;
    margin: 48px auto 0;
 }
-.sliders__dot {
+.slider__dot {
    width: 8px;
    height: 8px;
    border-radius: 50%;
    background: $link-gray;
+   border-color: transparent;
+   cursor: pointer;
 }
-a.sliders__dot--active {
+.slider__dot--active {
    background: transparent;
    border: 3px solid $primary-blue;
    transform: translateY(-25%);
+   box-sizing: content-box;
 }
 
