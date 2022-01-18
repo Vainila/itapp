@@ -103,7 +103,7 @@
 .header__menuBtn--active .menu__line:nth-child(1) {
   background: red;
   transform: rotate(0deg);
-  transform-origin: center center;
+  transform-origin: center;
 }
 .header__menuBtn--active .menu__line:nth-child(3) {
   background: blue;
