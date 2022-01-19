@@ -114,10 +114,27 @@
       grid-template-areas: 
       "img"
       "heading"
-      "info";
+      "info"
+      "btn";
       width: calc( 100% - 20px * 2);
       margin: 0 auto;
       padding: 40px 20px;
+      justify-items: center;   
+      .btn{
+         justify-self: stretch;
+         width: 100%;
+      }
+   }
+   .headhunters, .employers{
+      grid-template-areas:
+      "img"
+      "heading"
+      "info"
+      "sliderBtns"
+      "btn" ;
+      .slider__nav{
+         grid-area: sliderBtns;
+      }
    }
    .candidates__img, .employers__img, .headhunters__img{
       width: 165px;
@@ -127,6 +144,23 @@
       width: 100%;
       flex-wrap: nowrap;
       overflow: scroll;
+      
+      gap:30px;
    }
+   .candidates{
+         
+   }
+   .guide__info{
+      background: $base-color;
+      border-radius: 8px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      height: 150px;
+   }
+   
 
 }

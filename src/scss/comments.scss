@@ -12,34 +12,14 @@
    flex-direction: column;
 }
 
-.comments__heading {
-   font-size: 40px;
-   line-height: 56px;
-   font-weight: 800;
-   color: $heading-color;
-   margin-bottom: 8px;
-}
 
 
-.comments__container {
+.comments__container{
+   display: flex;
    gap: 30px;
    max-width: 1100px;
-   display: flex;
-
-   overflow-x: auto;
-   scroll-snap-type: x mandatory;
-   scroll-behavior: smooth;
-
-   cursor: grab;
-   cursor: -webkit-grab; 
-
-
-   scrollbar-width: none;
-  
 }
-.comments__container--scrolling{
-   scroll-behavior: auto !important;
-}
+
 
 .comment-Item {
    
@@ -49,29 +29,10 @@
    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.1);
    border-radius: 8px;
    padding: 32px 40px;
-   box-sizing: border-box;
-   flex-shrink: 0;
 
-   -webkit-overflow-scrolling: touch;
-   
-
-
-   cursor: grab;
-   cursor: -webkit-grab;
    
 }
 
-.comments__container--grabbing{
-   cursor: grabbing;
-   .comment-Item{
-      cursor: grabbing;
-   }
-}
-
-.comments__container::-webkit-scrollbar {
-   width: 0;
-   background: transparent;
-}
 .comment-Item__img {
    margin-bottom: 26px;
 }
@@ -119,23 +80,41 @@
    color: $dark-gray;
 }
 
-.slider__nav {
-   display: flex;
-   gap: 12px;
-   margin: 48px auto 0;
-}
-.slider__dot {
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
-   background: $link-gray;
-   border-color: transparent;
-   cursor: pointer;
-}
-.slider__dot--active {
-   background: transparent;
-   border: 3px solid $primary-blue;
-   transform: translateY(-25%);
-   box-sizing: content-box;
-}
 
+
+
+@media (max-width: 420px) {
+   .comments{
+      padding: 40px;
+      width: auto;
+      text-align: center;
+
+   }
+   .comment-Item{
+      width: 280px;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 32px 20px 15px;
+      
+      &__heading{
+         margin-bottom: 12px;
+         font-size: 18px;
+         line-height: 26px;
+      }
+      &__text{
+         margin-bottom: 40px;
+         font-size: 16px;
+         line-height: 24px;
+      }
+      .user__info{
+         vertical-align: text-top;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+   
+}

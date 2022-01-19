@@ -29,7 +29,7 @@
 }
 .cookies__warning{
   font-weight: 900;
-
+   
 }
 
 
@@ -42,3 +42,16 @@
    box-sizing: border-box;
 }
 
+@media (max-width: 420px){
+    .cookies-inner{
+       width: 100%;
+       padding: 20px;
+       flex-direction: column;
+       gap: 20px;
+       text-align: justify;
+    }
+    .cookies__btn{
+       align-self: stretch;
+       width: 100%;
+    }
+}

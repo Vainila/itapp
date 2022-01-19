@@ -55,4 +55,18 @@
       white-space: nowrap;    
    }
 }
-
+@media (max-width: 420px){
+   .achievements{
+      padding: 40px 20px;
+      &__item{
+         width: 80%;
+      }
+      margin-bottom: 20px;
+   }
+   .achievements-container{
+      flex-direction: column;
+      align-items: center;
+      
+   }
+   
+}

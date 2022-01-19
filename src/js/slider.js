@@ -1,4 +1,4 @@
-export default class Slider {
+class Slider {
    isPressed = false;
    positionX;
    constructor(sliderId) {
@@ -43,9 +43,9 @@ export default class Slider {
 
    start(e) {
       e.preventDefault();
-      console.log(this);
+   
      
-      this.positionStart = e.pageX - this.sliderElement.offsetLeft;
+      this.positionStart = e.pageX || e.changedTouches[0].pageX - this.sliderElement.offsetLeft;
       this.isPressed = true;
       this.styleControlButtons(this.buttons);
    }
@@ -53,21 +53,21 @@ export default class Slider {
       if (!this.isPressed) return;
 
       e.preventDefault();
+      
       this.styleControlButtons(this.buttons);
-      this.sliderElement.classList.add("comments__container--grabbing");
+      this.sliderElement.classList.add("slider__container--grabbing");
 
-      let position =
-         e.pageX - this.sliderElement.offsetLeft - this.positionStart;
+      let position = e.pageX || e.touches[0].pageX - this.sliderElement.offsetLeft - this.positionStart;
       
       if (this.sliderElement.scrollLeft == this.maxScrollWidth && position <= 0) {
-         this.sliderElement.classList.toggle("comments__container--scrolling");
+         this.sliderElement.classList.toggle("slider__container--scrolling");
          this.sliderElement.scrollTo(1, 0);
-         this.sliderElement.classList.toggle("comments__container--scrolling");
+         this.sliderElement.classList.toggle("slider__container--scrolling");
       } else if (this.sliderElement.scrollLeft == 0 && position > 0) {
          this.sliderElement.style.transition = 0;
-         this.sliderElement.classList.toggle("comments__container--scrolling");
-         this.sliderElement.scrollTo(this.maxScrollWidth, 0);
-         this.sliderElement.classList.toggle("comments__container--scrolling");
+         this.sliderElement.classList.toggle("slider__container--scrolling");
+         this.sliderElement.scrollTo(this.maxScrollWidth-1, 0);
+         this.sliderElement.classList.toggle("slider__container--scrolling");
       } else {
          this.sliderElement.scrollTo(this.sliderElement.scrollLeft - position, 0);
       }
@@ -75,7 +75,8 @@ export default class Slider {
    }
    end(e) {
       this.isPressed = false;
-      this.sliderElement.classList.remove("comments__container--grabbing");
+      this.sliderElement.classList.remove("slider__container--grabbing");
+      this.styleControlButtons(this.buttons);
    }
 
    init() {
@@ -89,6 +90,7 @@ export default class Slider {
 
       this.sliderElement.addEventListener("mouseup", this.end.bind(this));
       this.sliderElement.addEventListener("touchend", this.end.bind(this));
+      this.sliderElement.addEventListener("touchcancel", this.end.bind(this));
       this.sliderElement.addEventListener("mouseleave", this.end.bind(this));
 
       
