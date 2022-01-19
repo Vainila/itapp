@@ -1,7 +1,7 @@
 @import "./vars.scss";
 
 .guide{
-   width: 1440px;
+   max-width: 1440px;
    margin: 0 auto;
    padding: 112px 224px 151px 165px;
    box-sizing: border-box;
@@ -102,4 +102,31 @@
 }
 .headhunters__img{
    grid-area: img;
+}
+
+@media (max-width: 420px) {
+   .guide{
+      max-width: 420px;
+      padding: 0;
+   }
+   
+   .candidates, .headhunters, .employers{
+      grid-template-areas: 
+      "img"
+      "heading"
+      "info";
+      width: calc( 100% - 20px * 2);
+      margin: 0 auto;
+      padding: 40px 20px;
+   }
+   .candidates__img, .employers__img, .headhunters__img{
+      width: 165px;
+      height: auto;
+   }
+   .guide__info-container{
+      width: 100%;
+      flex-wrap: nowrap;
+      overflow: scroll;
+   }
+
 }

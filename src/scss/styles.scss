@@ -53,3 +53,9 @@ a {
    margin-top: 8px;
 }
 
+@media (max-width: 420px) {
+   wrapper{
+      max-width: 420px;
+      overflow: hidden;
+   }
+}

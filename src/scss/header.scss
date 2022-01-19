@@ -2,11 +2,10 @@
 
 .header-wrapper {
    width: 100%;
-   display: flex;
-   justify-content: center;
    border-bottom: 1px solid $light-gray;
 }
 .header {
+   box-sizing: border-box;
    width: 1440px;
    height: 80px;
    padding: 0 165px 0 135px;
@@ -32,6 +31,8 @@
 }
 .header__logo {
    margin-right: 60px;
+   background: #ffffff;
+   
 }
 .header__navList {
    display: flex;
@@ -75,6 +76,7 @@
 }
 
 .header__signBtn {
+
 }
 
 .header__mobile-buttons {
@@ -87,20 +89,34 @@
    background: transparent;
    // border: transparent;
    padding-top: 3px;
+   &:hover{
+      .menu__line{
+         background: $secondary-blue;
+      }
+   }
 }
 
-.header__menuBtn--active{
-   .menu__line:nth-child(1){
-      background: red;
-      transform: rotate(0deg);
-      transform-origin:  center;
-      
+
+
+.header__menuBtn--active{   
+   .menu__line:nth-child(2){
+      background-color: transparent !important;
+   }  
+   .menu__line:nth-child(1){      
+      transform: translateY(7px) rotate(45deg);
+      transform-origin: 55% 60%;      
+      background: $dark-gray;
    }
-   .menu__line:nth-child(3){
-      background: blue;
-      transform: rotate(-45deg);
-      transform-origin: left center;
+   .menu__line:nth-child(3){      
+      transform: translateY(-7px) rotate(-45deg);
+      transform-origin: 60% 60%;
+      background: $dark-gray;
    }
+   &:hover{
+      .menu__line{
+         background: $secondary-blue;
+      }
+   }   
 }
 
 .menu__line{
@@ -109,22 +125,28 @@
    border-radius: 1px;
    background: $primary-blue;
    margin-bottom: 4px;
-   
+   transition: all 0.12s;  
 }
 .menu__line:last-child{
    margin-bottom: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
    .header {
+      *{
+         z-index: 5;
+
+      }
       height: 65px;
-      width: 100%;
+      max-width: 95%;
       padding: 0 15px;
       justify-content: space-between;
    }
    .header__logo {
       height: 30px;
       width: 123px;
+      padding: 15px 0;
+      
    }
    .header__signBtn,
    .header__loginBtn {
@@ -138,15 +160,22 @@
    }
 
    .header__nav-wrapper {
+      z-index: 1 !important;
       flex-direction: column;
       position: absolute;
       justify-content: start;
       background: white;
-      top: 66px;
+      // top: -500%;
       left: 0;
       padding: 0 15px 0;
+      transform: translateY(-200%);
+      transition: transform 0.2s ease-out;
    }
-
+   .header__nav-wrapper--active{
+      top: 0px !important;
+      transform: translateY(66px);
+      
+   }
    .header__mobile-buttons {
       display: flex;
       gap: 20px;
@@ -154,6 +183,11 @@
 
    .header__account-btn {
       display: block;
+   }
+   .header__account-btn:hover{
+      svg path{
+         fill: $secondary-blue; 
+      }
    }
    
 }
