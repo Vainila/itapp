@@ -83,7 +83,7 @@ class Slider {
       this.initBtns();
       this.styleControlButtons(this.buttons);
       this.sliderElement.addEventListener("mousedown", this.start.bind(this));
-      this.sliderElement.addEventListener("touchstart", this.start.bind(this));
+      //this.sliderElement.addEventListener("touchstart", this.start.bind(this));
 
       this.sliderElement.addEventListener("mousemove", this.move.bind(this));
       this.sliderElement.addEventListener("touchmove", this.move.bind(this));
