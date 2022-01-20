@@ -1,0 +1,71 @@
+@import "./vars.scss";
+
+
+
+
+.slider__container {
+   
+   display: flex;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+
+   cursor: grab;
+   cursor: -webkit-grab; 
+   scrollbar-width: none;
+  
+}
+
+.slider__container--scrolling{
+   scroll-behavior: auto !important;
+}
+
+
+.slider__container .slide{
+   
+   box-sizing: border-box;
+   flex-shrink: 0;
+   -webkit-overflow-scrolling: touch;   
+
+
+   cursor: grab;
+   cursor: -webkit-grab;
+}
+
+.slider__container--grabbing{
+   cursor: grabbing;
+   .comment-Item{
+      cursor: grabbing;
+   }
+}
+
+.slider__container::-webkit-scrollbar {
+   width: 0;
+   background: transparent;
+}
+
+
+
+
+.slider__nav {
+   display: flex;
+   gap: 12px;
+   margin: 48px auto 0;
+}
+.slider__dot {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: $link-gray;
+   border-color: transparent;
+   cursor: pointer;
+}
+.slider__dot--active {
+   background: transparent;
+   border: 3px solid $primary-blue;
+   transform: translateY(-25%);
+   box-sizing: content-box;
+}
+.slider__nav--hidden{
+   display: none;
+}

@@ -11,47 +11,64 @@
       <div class="wrapper">
          <div class="header-wrapper">
             <header class="header">
-               <nav class="header__nav">
-                  <a href="#">
-                     <img
-                        class="header__logo"
-                        src="./assets/img/itapplogo_color.svg"
-                        alt="logo"
-                     />
+               <a href="#">
+                  <img
+                     class="header__logo"
+                     src="./assets/img/itapplogo_color.svg"
+                     alt="logo"
+                  />
+               </a>
+               <div class="header__nav-wrapper">
+                  <nav class="header__nav">
+                     <ul class="header__navList">
+                        <li class="header__navItem">
+                           <a
+                              class="header__navLink header__navLink--active"
+                              href="#"
+                           >
+                              Home
+                           </a>
+                        </li>
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#">News</a>
+                        </li>
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#">About</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <nav class="header__nav">
+                     <ul class="header__navList">
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#">For Employers</a>
+                        </li>
+                        <li class="header__navItem">
+                           <a class="header__navLink" href="#"
+                              >For Headhunters</a
+                           >
+                        </li>
+                     </ul>
+                     <button class="btn btn--secondary header__loginBtn">
+                        Login
+                     </button>
+                     <button class="btn btn--primary header__signBtn">
+                        Sign up
+                     </button>
+                  </nav>
+               </div>
+               <div class="header__mobile-buttons">
+                  <a href="#" class="header__account-btn">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 14H15C17.7614 14 20 16.2386 20 19C20 19.5523 19.5523 20 19 20C18.4872 20 18.0645 19.614 18.0067 19.1166L17.9949 18.8237C17.907 17.3072 16.6928 16.093 15.1763 16.0051L15 16H5C3.34315 16 2 17.3431 2 19C2 19.5523 1.55228 20 1 20C0.447715 20 0 19.5523 0 19C0 16.3112 2.12231 14.1182 4.78311 14.0046L5 14H15H5ZM10 0C13.3137 0 16 2.68629 16 6C16 9.31371 13.3137 12 10 12C6.68629 12 4 9.31371 4 6C4 2.68629 6.68629 0 10 0ZM10 2C7.79086 2 6 3.79086 6 6C6 8.20914 7.79086 10 10 10C12.2091 10 14 8.20914 14 6C14 3.79086 12.2091 2 10 2Z" fill="#2E1AAD"/>
+                     </svg>
+                        
                   </a>
-                  <ul class="header__navList">
-                     <li class="header__navItem">
-                        <a
-                           class="header__navLink header__navLink--active"
-                           href="#"
-                        >
-                           Home
-                        </a>
-                     </li>
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">News</a>
-                     </li>
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">About</a>
-                     </li>
-                  </ul>
-               </nav>
-               <nav class="header__nav">
-                  <ul class="header__navList">
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">For Employers</a>
-                     </li>
-                     <li class="header__navItem">
-                        <a class="header__navLink" href="#">For Headhunters</a>
-                     </li>
-                  </ul>
-                  <button class="btn btn--secondary header__loginBtn">
-                     Login
-                  </button>
-                  <button class="btn btn--primary header__signBtn">
-                     Sign up
-                  </button>
-               </nav>
+                  <div class="header__menuBtn">
+                     <div class="menu__line"></div>
+                     <div class="menu__line"></div>
+                     <div class="menu__line"></div>                     
+                  </div>
+               </div>
             </header>
          </div>
          <div class="main">
@@ -112,33 +129,33 @@
                   <h3 class="section__heading candidates__heading">
                      For Candidates
                   </h3>
-                  <div class="guide__info-container">
-                     <div class="guide__info">
+                  <div class="guide__info-container" id="candidates__slider">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Build profile page</h4>
                         <span class="guide__text">
                            Manage all applications in one area
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">User friendly</h4>
                         <span class="guide__text">
                            Easy CV upload, build or edit
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Nothing will be lost</h4>
                         <span class="guide__text">
                            Save jobs for later viewing, share to colleagues or
                            social media
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Recommendations</h4>
                         <span class="guide__text">
                            View recommended jobs based on selected preferences
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">
                            Apply directly to employer
                         </h4>
@@ -146,7 +163,7 @@
                            All jobs posted are employer only
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">
                            Feedback on all applications
                         </h4>
@@ -155,19 +172,29 @@
                            application
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Advanced search</h4>
                         <span class="guide__text">
                            Search by multi location/ type feature
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Visibility</h4>
                         <span class="guide__text">
                            Be visible to employers for invitations to apply for
                            a position
                         </span>
                      </div>
+                  </div>
+                  <div class="slider__nav slider__nav--hidden">
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
                   </div>
                   <img
                      class="candidates__img"
@@ -179,14 +206,14 @@
                   <h3 class="section__heading employers__heading">
                      For Employers
                   </h3>
-                  <div class="guide__info-container">
-                     <div class="guide__info">
+                  <div class="guide__info-container" id="employers__slider">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Everything you need</h4>
                         <span class="guide__text">
                            Manage recruitment process all in one place
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">
                            Reduce annual recruitment costs
                         </h4>
@@ -194,39 +221,48 @@
                            Simplifed recruitment process reducing overheads
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Application flow</h4>
                         <span class="guide__text">
                            Direct applicants with full view CV and details
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Personalised</h4>
                         <span class="guide__text">
                            Build job and personalise process (stages, questions
                            etc.)
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Tailored packages</h4>
                         <span class="guide__text">
                            Customise your package to your needs
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Analytics</h4>
                         <span class="guide__text">
                            Get detailed information on how your applications are
                            performing
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Candidate database</h4>
                         <span class="guide__text">
                            Collect your own candidate database and recommend
                            other roles in your organisation.
                         </span>
                      </div>
+                  </div>
+                  <div class="slider__nav slider__nav--hidden">
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
                   </div>
                   <img
                      class="employers__img"
@@ -242,15 +278,15 @@
                   <h3 class="section__heading employers__heading">
                      For Headhunters
                   </h3>
-                  <div class="guide__info-container">
-                     <div class="guide__info">
+                  <div class="guide__info-container" id="headhunters__slider">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Build profile</h4>
                         <span class="guide__text">
                            Advertise skills/ expertise to employers and
                            candidates
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">
                            Get invited to assist on a vacancy
                         </h4>
@@ -258,7 +294,7 @@
                            Submit your candidates directly to employers
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">
                            Develop stronger client relationships
                         </h4>
@@ -266,12 +302,19 @@
                            No confusion who submitted candidates first
                         </span>
                      </div>
-                     <div class="guide__info">
+                     <div class="guide__info slide">
                         <h4 class="guide__heading">Weekly progress summary</h4>
                         <span class="guide__text">
                            Get weekly updates on your candidates progress
                         </span>
                      </div>
+                  </div>
+                  <div class="slider__nav slider__nav--hidden">
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     
                   </div>
                   <img
                      class="headhunters__img"
@@ -281,6 +324,7 @@
                   <a href="#" class="btn btn--primary headhunters__btn"
                      >For Headhunters</a
                   >
+                  
                </div>
             </section>
             <div class="comments-wrapper">
@@ -289,8 +333,8 @@
                   <p class="section__text">
                      We have been working with clients around the world
                   </p>
-                  <div class="comments__container">
-                     <div class="comment-Item" id="slide--1">
+                  <div class="comments__container slider__container" id="comments__slider">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -316,7 +360,7 @@
                            >
                         </div>
                      </div>
-                     <div class="comment-Item" id="slide--2">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -340,7 +384,7 @@
                            >
                         </div>
                      </div>
-                     <div class="comment-Item" id="slide--3">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -366,7 +410,7 @@
                            >
                         </div>
                      </div>
-                     <div class="comment-Item" id="slide--4">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -392,7 +436,7 @@
                            >
                         </div>
                      </div>
-                     <div class="comment-Item" id="slide--5">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -418,7 +462,7 @@
                            >
                         </div>
                      </div>
-                     <div class="comment-Item" id="slide--6">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -444,7 +488,7 @@
                            >
                         </div>
                      </div>
-                     <div class="comment-Item" id="slide--7">
+                     <div class="comment-Item slide">
                         <img
                            src="./assets/img/stars.svg"
                            alt="stars"
@@ -471,15 +515,14 @@
                         </div>
                      </div>
                   </div>
-                  <div class="sliders__nav">
-                     <a href="#slide--1" class="sliders__dot"></a>
-
-                     <a
-                        href="#slide--4"
-                        class="sliders__dot sliders__dot--active"
-                     ></a>
-
-                     <a href="#slide--7" class="sliders__dot"></a>
+                  <div class="slider__nav">
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
+                     <button class="slider__dot"></button>
                   </div>
                </section>
             </div>
@@ -493,7 +536,7 @@
                <div class="achievements-container">
                   <div class="achievements__item">
                      <img
-                        class="achievements__img"
+                        class="achievements__img achievements__img--1"
                         src="./assets/img/hat.svg"
                         alt="hat.svg"
                      />
@@ -502,7 +545,7 @@
                   </div>
                   <div class="achievements__item">
                      <img
-                        class="achievements__img"
+                        class="achievements__img achievements__img--2"
                         src="./assets/img/case.svg"
                         alt="case.svg"
                      />
@@ -511,7 +554,7 @@
                   </div>
                   <div class="achievements__item">
                      <img
-                        class="achievements__img"
+                        class="achievements__img achievements__img--3"
                         src="./assets/img/medal.svg"
                         alt="medal.svg"
                      />
@@ -520,7 +563,7 @@
                   </div>
                   <div class="achievements__item">
                      <img
-                        class="achievements__img"
+                        class="achievements__img achievements__img--4"
                         src="./assets/img/award.svg"
                         alt="award.svg"
                      />
@@ -548,7 +591,6 @@
                         mollit. Exercitation veniam...
                      </p>
                   </div>
-
                   <div class="news__item">
                      <img
                         class="news__img"
@@ -580,15 +622,24 @@
                      </p>
                   </div>
                </div>
-            </section>            
+               <a href="#" class="btn btn--secondary all-news--mobile"
+                     >All news</a
+                  >
+               
+            </section>
          </div>
          <div class="cookies">
             <div class="cookies-inner">
                <p class="cookies__text">
                   <span class="cookies__warning">
-                     This website uses cookies<br>
+                     This website uses cookies<br />
                   </span>
-                  We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services
+                  We use cookies to personalise content and ads, to provide
+                  social media features and to analyse our traffic. We also
+                  share information about your use of our site with our social
+                  media, advertising and analytics partners who may combine it
+                  with other information that you’ve provided to them or that
+                  they’ve collected from your use of their services
                </p>
                <button class="btn btn--black cookies__btn">OK</button>
             </div>
@@ -596,13 +647,13 @@
          <footer class="footer">
             <div class="footer-inner">
                <div class="copyright">
-                  <img src="./assets/img/footerLogo.svg" alt="logo" class="footer__logo">
-                  <span class="footer__text">
-                     Copyright © 2021 I-TAPP
-                  </span>
-                  <span class="footer__text">
-                     All rights reserved
-                  </span>
+                  <img
+                     src="./assets/img/footerLogo.svg"
+                     alt="logo"
+                     class="footer__logo"
+                  />
+                  <span class="footer__text"> Copyright © 2021 I-TAPP </span>
+                  <span class="footer__text"> All rights reserved </span>
                </div>
                <div class="footer__links-container">
                   <h4 class="footer__heading">Company</h4>
@@ -610,20 +661,33 @@
                      <li><a class="footer__link" href="#">Home</a></li>
                      <li><a class="footer__link" href="#">About I-TAPP</a></li>
                      <li><a class="footer__link" href="#">News</a></li>
-                     <li><a class="footer__link" href="#">Terms and Conditions</a></li>
-                     <li><a class="footer__link" href="#">Privacy Policy</a></li>
+                     <li>
+                        <a class="footer__link" href="#"
+                           >Terms and Conditions</a
+                        >
+                     </li>
+                     <li>
+                        <a class="footer__link" href="#">Privacy Policy</a>
+                     </li>
                   </ul>
                </div>
                <div class="footer__links-container">
                   <h4 class="footer__heading">Jobs</h4>
                   <ul class="footer__links">
-                     <li><a class="footer__link" href="#">For Candidates</a></li>
                      <li><a class="footer__link" href="#">For Employers</a></li>
-                     <li><a class="footer__link" href="#">For Headhunters</a></li>                    
+                     <li>
+                        <a class="footer__link" href="#">For Candidates</a>
+                     </li>
+                     <li>
+                        <a class="footer__link" href="#">For Headhunters</a>
+                     </li>
                   </ul>
                </div>
             </div>
          </footer>
       </div>
+      <script src="./src/js/slider.js"></script>
+      <script src="./src/js/script.js"></script>
+      <!-- <script type="module" src="./src/js/script.js"></script> -->
    </body>
 </html>

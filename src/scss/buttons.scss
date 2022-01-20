@@ -6,32 +6,49 @@
    border: 1px solid $primary-blue;
    cursor: pointer;
    white-space: nowrap;
+   @include manrope;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.header .btn {
-   padding: 10px 30px;
+.header .btn {   
+   width: 100px;
+   height: 40px;
+   font-size: 14px;
 }
 
 .btn--primary {
    color: #ffffff;
    background: $primary-blue;
 }
-.btn--primary:hover {
+
+.btn--primary:active, .btn--secondary:active{
+   background: $primary-blue--active !important;
+}
+
+.btn--primary:hover,.btn--secondary:hover {
    background: $secondary-blue;
+   border-color: $secondary-blue;
+   color: $light-bg;
 }
 
 .btn--secondary {
    color: $primary-blue;
    background: transparent;
 }
-.btn--secondary:hover{
-   color: $secondary-blue;
-   border-color: $secondary-blue;
-}
+
+
 
 .btn--black{
    background: $heading-color;
-   color: $light-bg;
-   
-   
+   color: $light-bg;   
+}
+
+.btn--black:hover{
+   background: $black-btn--hover;
+}
+
+.btn--black:active{
+   background: $black-btn--active;
 }
