@@ -1,5 +1,5 @@
 .hero{
-   background: $base-color;
+   background: $base-color;   
    width: 100%;
    display: flex;
    justify-content: center;
@@ -10,26 +10,27 @@
    max-width: 1440px;
    display: grid;
    grid-template-areas:
-   "a b"
-   "c c";
+   "info img"
+   "search search";
    padding: 72px 114px 112px 136px;
    box-sizing: border-box;
    column-gap: 32px;
    row-gap: 48px;
+   height:max-content;
 }
 
 .hero__info{
-   grid-area: a;
+   grid-area: info;
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 
 .hero__img{
-   grid-area: b
+   grid-area: img
 }
 .hero__search{
-   grid-area: c;
+   grid-area: search;
 }
 
 .hero__heading{ 
@@ -47,4 +48,40 @@
    line-height: 30px;
    font-weight: 400;
    max-width: 484px;
+}
+
+@media (max-width : 420px){
+   .hero-inner{
+      grid-template-areas:
+      "img"
+      "info"
+      "search";
+      padding: 24px 20px 40px;
+      column-gap: 5px;
+      width: 420px;
+      justify-items: center;
+   }
+   .hero__info{
+      text-align: center;
+      align-items: center;
+   }
+   .hero__heading{
+      font-style: normal;
+      font-size: 24px;
+      line-height: 30px;      
+      max-width: 230px;
+   }
+   .hero__text{
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 280px;
+
+   }
+   .hero__img{
+      max-width: 210px;
+      height: auto;
+      justify-self: center;
+   }
+   
+
 }

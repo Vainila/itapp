@@ -3,6 +3,13 @@
 .cookies{
    background: $dark-gray;
    width: 100%;
+   position: sticky;
+   position: -webkit-sticky;
+   bottom: 0px;
+}
+
+.cookies--hide{
+   display:none;
 }
 .cookies-inner{
    width: 1440px;
@@ -22,13 +29,29 @@
 }
 .cookies__warning{
   font-weight: 900;
-
+   
 }
 
 
-.cookies__btn{
-   
-   padding: 10px 46px;
+.cookies__btn{     
    border-radius: 100px;
    border: transparent;
+   font-size: 14px;
+   width: 112px;
+   height: 40px;
+   box-sizing: border-box;
+}
+
+@media (max-width: 420px){
+    .cookies-inner{
+       width: 100%;
+       padding: 20px;
+       flex-direction: column;
+       gap: 20px;
+       text-align: justify;
+    }
+    .cookies__btn{
+       align-self: stretch;
+       width: 100%;
+    }
 }
