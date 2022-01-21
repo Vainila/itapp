@@ -8,12 +8,11 @@
    box-sizing: border-box;
    gap: 24px;
 
-   
-   width: 1100px;
-   height: 96px;
+   width: 100%;
+   max-width: 1100px;
    background: #fff;
-
-
+   
+   
    
 }
 
@@ -22,6 +21,7 @@
    width: 115px;
    box-sizing: border-box;
    font-size: 16px;
+   height: 52px;
 }
 
 .job,.where,.distance{
@@ -50,7 +50,31 @@
   background: url("/assets/img/dropdown_arrow.svg") no-repeat 90% !important;
 }
 
-
+@media (max-width: 1100px){
+   .search-form{
+      min-height: 96px;
+      flex-wrap: wrap;
+      
+      width: auto;
+      flex: 1 1;
+   }
+   .job{
+      flex-grow: 1;
+   }
+    .where, .distance{
+      
+      min-width: 240px;
+      flex-grow: 1;
+   }
+   .distance{
+      flex-grow: 2;
+      order: -1;
+   }
+   .search-form__btn{
+      margin-left: auto;
+      flex-grow: 1;
+   }
+}
 @media (max-width: 420px) {
 
    .search-form{
@@ -65,10 +89,12 @@
       flex-wrap: wrap;
       flex-shrink: 0;
       background: transparent;
+      
    }
 
    .job, .where, .distance{
       background:transparent;
+      
    }
    .job{
       width: 100%;

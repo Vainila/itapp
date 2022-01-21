@@ -1,87 +1,101 @@
-.hero{
-   background: $base-color;   
+.hero {
+   background: $base-color;
    width: 100%;
    display: flex;
    justify-content: center;
-   
 }
 
-.hero-inner{
+.hero-inner {
+   width: 100%;
    max-width: 1440px;
    display: grid;
    grid-template-areas:
-   "info img"
-   "search search";
-   padding: 72px 114px 112px 136px;
+      "info img"
+      "search search";
+   padding: 72px 8% 112px 9.5%;
    box-sizing: border-box;
-   column-gap: 32px;
+   column-gap: 3%;
    row-gap: 48px;
-   height:max-content;
+   height: max-content;
 }
 
-.hero__info{
+.hero__info {
    grid-area: info;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   min-width: 360px;
+   
 }
 
-.hero__img{
-   grid-area: img
+.hero__img {
+   grid-area: img;
+   max-width: 585px;
+   width: 100%;
+   min-width: 210px;
 }
-.hero__search{
+.hero__search {
    grid-area: search;
 }
 
-.hero__heading{ 
+.hero__heading {
    color: $heading-color;
-   
    font-weight: 800;
    font-size: 48px;
    line-height: 60px;
    max-width: 80%;
+   min-width: 360px;
+   width: 100%;
    margin-bottom: 28px;
 }
-.hero__text{
+.hero__text {
    color: $dark-gray;
    font-size: 18px;
    line-height: 30px;
    font-weight: 400;
-   max-width: 484px;
+   max-width: 80%;
 }
-
-@media (max-width : 420px){
-   .hero-inner{
+@media (max-width: 900px) {
+   .hero-inner {
       grid-template-areas:
-      "img"
-      "info"
-      "search";
+         "img"
+         "info"
+         "search";      
+      column-gap: 5px;
       padding: 24px 20px 40px;
       column-gap: 5px;
-      width: 420px;
       justify-items: center;
    }
-   .hero__info{
+   .hero__heading{
+      font-size: 36px;
+   }
+   .hero__info {
       text-align: center;
       align-items: center;
    }
-   .hero__heading{
+   .hero__img{
+      max-width: 50%;
+   }
+}
+@media (max-width: 420px) {
+   .hero-inner {
+      width: 420px;      
+   }
+   
+   .hero__heading {
       font-style: normal;
       font-size: 24px;
-      line-height: 30px;      
+      line-height: 30px;
       max-width: 230px;
    }
-   .hero__text{
+   .hero__text {
       font-size: 16px;
       line-height: 24px;
       max-width: 280px;
-
    }
-   .hero__img{
+   .hero__img {
       max-width: 210px;
       height: auto;
       justify-self: center;
    }
-   
-
 }
