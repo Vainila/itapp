@@ -3,7 +3,7 @@
 .achievements{
    max-width: 1440px;
    margin: 0 auto;
-   padding: 120px 165px 0;
+   padding: 8.3% 11.45% 0;
    box-sizing: border-box;
    margin-bottom: 107px;
 
@@ -36,8 +36,8 @@
    align-items: center;
    border-radius: 16px;
    flex: 0 0 255px;
+   min-width: 255px;
    
-
 
 
    .item__heading{
@@ -55,13 +55,32 @@
       white-space: nowrap;    
    }
 }
-@media (max-width: 420px){
+
+@media (max-width: 1300px) {
+   .achievements-container{
+      flex-wrap: wrap;
+   };
+   .achievements__item{
+      max-width: 30%;
+      flex-grow: 1;
+   }
+}
+@media (max-width: 1086px){
+   .achievements__item{
+      max-width: 50%;
+      
+   }
+}
+@media (max-width: 718px){
    .achievements{
       padding: 40px 20px;
       &__item{
          width: 80%;
       }
       margin-bottom: 20px;
+      .achievements__heading, .section__text{
+         text-align: center;
+      }
    }
    .achievements-container{
       flex-direction: column;
