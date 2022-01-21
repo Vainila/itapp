@@ -582,7 +582,7 @@
 
   .candidates, .headhunters, .employers {
     grid-template-areas: "img" "heading" "info" "btn";
-    width: calc( 100% - 20px * 2);
+    width: calc(100% - 40px);
     padding: 40px 20px;
     justify-items: center;
     margin-bottom: 0px;
@@ -607,7 +607,7 @@
 
   .candidates, .headhunters, .employers {
     grid-template-areas: "img" "heading" "info" "btn";
-    width: calc( 100% - 20px * 2);
+    width: calc(100% - 40px);
     margin: 0 auto;
     padding: 40px 20px;
     justify-items: center;
@@ -1179,7 +1179,8 @@
 }
 
 .slider__nav--hidden {
-  display: none;
+  visibility: hidden;
+  cursor: auto;
 }
 
 * {
