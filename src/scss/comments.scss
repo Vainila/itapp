@@ -4,9 +4,9 @@
    background: $blue-bg;
 }
 .comments {
-   padding: 112px 165px;
+   padding: 7.7% 11.4%;
    margin: 0 auto;
-   width: 1440px;
+   max-width: 1440px;
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
@@ -79,13 +79,17 @@
    line-height: 24px;
    color: $dark-gray;
 }
-
+@media (max-width: 1000px){
+   .comments{
+      padding: 40px;
+   }
+}
 
 
 
 @media (max-width: 420px) {
    .comments{
-      padding: 40px;
+      padding: 5%;
       width: auto;
       text-align: center;
 

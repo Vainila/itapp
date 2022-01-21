@@ -3,7 +3,7 @@
 .guide{
    max-width: 1440px;
    margin: 0 auto;
-   padding: 112px 224px 151px 165px;
+   padding: 112px 15.5% 151px 11.5%;
    box-sizing: border-box;
 }
 
@@ -51,6 +51,7 @@
 
 .candidates__img{
    grid-area: img;
+   
 }
 
 
@@ -73,6 +74,7 @@
    grid-area: img;
    margin-top: 50px;
 }
+
 
 .employers__btn, .headhunters__btn{
    grid-area: btn;
@@ -104,9 +106,61 @@
    grid-area: img;
 }
 
-@media (max-width: 420px) {
+.candidates__img, .employers__img, .headhunters__img{
+   min-width: 165px;
+   max-width: 100%;
+   height: auto;
+   
+}
+
+@media (max-width: 1200px) {
+   .candidates__img, .employers__img, .headhunters__img{
+      width: 30%;
+
+   }
    .guide{
-      max-width: 420px;
+      padding: 0;
+   }
+   .section__heading{
+      margin-top: 30px;
+      
+   }
+   .guide__info-container{
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+      
+   }
+   .guide__info{
+      flex-grow: 1;
+      max-width: 30%;
+   }
+   .candidates, .headhunters, .employers{
+      grid-template-areas: 
+      "img"
+      "heading"
+      "info"
+      "btn";
+      width: calc( 100% - 20px * 2);
+      padding: 40px 5%;
+      justify-items: center;
+      margin-bottom: 0px;
+   }
+   .employers__btn,.headhunters__btn{
+      justify-self: center;
+      width: 50%;
+      margin-top: 50px;
+   }
+}
+@media (max-width: 700px){
+   .guide__info{
+      max-width: 50%;
+   }
+}
+
+@media (max-width: 580px) {
+   .guide{
+      max-width: 580px;
       padding: 0;
    }
    
@@ -139,6 +193,7 @@
    .candidates__img, .employers__img, .headhunters__img{
       width: 165px;
       height: auto;
+      margin-top: 50px;
    }
    .guide__info-container{
       width: 100%;
