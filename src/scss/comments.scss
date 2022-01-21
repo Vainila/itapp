@@ -79,13 +79,17 @@
    line-height: 24px;
    color: $dark-gray;
 }
-
+@media (max-width: 1000px){
+   .comments{
+      padding: 40px;
+   }
+}
 
 
 
 @media (max-width: 420px) {
    .comments{
-      padding: 40px;
+      padding: 5%;
       width: auto;
       text-align: center;
 

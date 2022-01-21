@@ -21,7 +21,7 @@ class Slider {
    }
    styleControlButtons(buttons) {
       buttons.forEach((e) => e.classList.remove("slider__dot--active"));
-      buttons[this.getNumberOfActiveSlide()].classList.add("slider__dot--active");
+      buttons[this.getNumberOfActiveSlide() || 0].classList.add("slider__dot--active");
    }
 
    initBtns() {

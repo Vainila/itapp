@@ -67,5 +67,7 @@
    box-sizing: content-box;
 }
 .slider__nav--hidden{
-   display: none;
+   // display: none;
+   visibility: hidden;
+   cursor: auto;
 }

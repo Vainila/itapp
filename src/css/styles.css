@@ -311,7 +311,7 @@
   .hero-inner {
     grid-template-areas: "img" "info" "search";
     column-gap: 5px;
-    padding: 24px 20px 40px;
+    padding: 24px 5% 40px;
     column-gap: 5px;
     justify-items: center;
   }
@@ -571,7 +571,7 @@
 
   .guide__info-container {
     width: 100%;
-    padding: 0 50px;
+    padding: 0;
     margin: 0 auto;
   }
 
@@ -582,8 +582,8 @@
 
   .candidates, .headhunters, .employers {
     grid-template-areas: "img" "heading" "info" "btn";
-    width: calc( 100% - 20px * 2);
-    padding: 40px 20px;
+    width: calc(100% - 40px);
+    padding: 40px 5%;
     justify-items: center;
     margin-bottom: 0px;
   }
@@ -607,7 +607,7 @@
 
   .candidates, .headhunters, .employers {
     grid-template-areas: "img" "heading" "info" "btn";
-    width: calc( 100% - 20px * 2);
+    width: calc(100% - 40px);
     margin: 0 auto;
     padding: 40px 20px;
     justify-items: center;
@@ -724,9 +724,14 @@
   color: #999999;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 1000px) {
   .comments {
     padding: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .comments {
+    padding: 5%;
     width: auto;
     text-align: center;
   }
@@ -842,7 +847,7 @@
 .news {
   max-width: 1440px;
   box-sizing: border-box;
-  padding: 0 8% 46px;
+  padding: 0 8% 4%;
   margin: 0 auto;
 }
 
@@ -878,6 +883,7 @@
   gap: 30px;
   flex-wrap: wrap;
   max-width: 1140px;
+  border-radius: 8px;
 }
 
 .news__item {
@@ -923,7 +929,7 @@
 @media (max-width: 890px) {
   .news {
     width: 100%;
-    padding: 0 20px 20px;
+    padding: 0 5% 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1179,7 +1185,8 @@
 }
 
 .slider__nav--hidden {
-  display: none;
+  visibility: hidden;
+  cursor: auto;
 }
 
 * {
