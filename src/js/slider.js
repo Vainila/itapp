@@ -57,16 +57,17 @@ class Slider {
       this.styleControlButtons(this.buttons);
       this.sliderElement.classList.add("slider__container--grabbing");
 
-      let position = e.pageX || e.touches[0].pageX - this.sliderElement.offsetLeft - this.positionStart;
+      // let position = e.pageX || e.touches[0].pageX - this.sliderElement.offsetLeft - this.positionStart;
+      let position = e.pageX - this.sliderElement.offsetLeft - this.positionStart;
       
       if (this.sliderElement.scrollLeft == this.maxScrollWidth && position <= 0) {
          this.sliderElement.classList.toggle("slider__container--scrolling");
-         this.sliderElement.scrollTo(1, 0);
+         this.sliderElement.scrollTo(0, 0);
          this.sliderElement.classList.toggle("slider__container--scrolling");
       } else if (this.sliderElement.scrollLeft == 0 && position > 0) {
          this.sliderElement.style.transition = 0;
          this.sliderElement.classList.toggle("slider__container--scrolling");
-         this.sliderElement.scrollTo(this.maxScrollWidth-1, 0);
+         this.sliderElement.scrollTo(this.maxScrollWidth, 0);
          this.sliderElement.classList.toggle("slider__container--scrolling");
       } else {
          this.sliderElement.scrollTo(this.sliderElement.scrollLeft - position, 0);
@@ -83,7 +84,7 @@ class Slider {
       this.initBtns();
       this.styleControlButtons(this.buttons);
       this.sliderElement.addEventListener("mousedown", this.start.bind(this));
-      this.sliderElement.addEventListener("touchstart", this.start.bind(this));
+      //this.sliderElement.addEventListener("touchstart", this.start.bind(this));
 
       this.sliderElement.addEventListener("mousemove", this.move.bind(this));
       this.sliderElement.addEventListener("touchmove", this.move.bind(this));
