@@ -127,7 +127,7 @@
    }
    .guide__info-container{
       width: 100%;
-      padding: 0 50px;
+      padding: 0;
       margin: 0 auto;
       
    }
@@ -142,7 +142,7 @@
       "info"
       "btn";
       width: calc( 100% - 20px * 2);
-      padding: 40px 20px;
+      padding: 40px 5%;
       justify-items: center;
       margin-bottom: 0px;
    }
