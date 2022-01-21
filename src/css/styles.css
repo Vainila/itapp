@@ -607,7 +607,7 @@
 
   .candidates, .headhunters, .employers {
     grid-template-areas: "img" "heading" "info" "btn";
-    width: calc(100% - 40px);
+    width: calc( 100% - 20px * 2);
     margin: 0 auto;
     padding: 40px 20px;
     justify-items: center;
@@ -627,6 +627,7 @@
   .candidates__img, .employers__img, .headhunters__img {
     width: 165px;
     height: auto;
+    margin-top: 50px;
   }
 
   .guide__info-container {
@@ -935,7 +936,7 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: start;
     gap: 50px;
   }
 
